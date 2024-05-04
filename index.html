@@ -4,201 +4,220 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title>臺灣博碩士論文知識加值系統：自由的博碩士學位論文全文資料庫（現在位置：首頁）</title>
+    <link rel="stylesheet" href="stylesheet.css">
 </head>
 
-<header>
-    <div>
-        <ul>
-            <li><a href="#">網站導覽</a><span class="straight">|</span></li>
-            <li><a href="#">首頁</a><span class="straight">|</span></li>
-            <li><a href="#">關於本站</a><span class="straight">|</span></li>
-            <li><a href="#">聯絡我們</a><span class="straight">|</span></li>
-            <li><a href="#">國圖首頁</a><span class="straight">|</span></li>
-            <li><a href="#">常見問題</a><span class="straight">|</span></li>
-            <li><a href="#">操作說明</a></li>
-        </ul>
-    </div>
-    <div>
-        <ul>
-            <li><a href="#">English</a><span class="straight">|</span></li>
-            <li><a href="#">FB 專頁</a><span class="straight">|</span></li>
-            <li><a href="#">Mobile</a></li>
-        </ul>
-    </div>
-    <nav>
-        <ul>
-            <li><a href="#">論文查詢</a></li>
-            <li><a href="#">排行榜</a></li>
-            <li><a href="#">影音圖像</a></li>
-            <li><a href="#">主題館</a></li>
-            <li><a href="#">我的研究室</a></li>
-            <li><a href="#">NDLTD查詢</a></li>
-        </ul>
-    </nav>
-</header>
-
-<section class="content">
-    <body>
-        <!-- 簡易查詢區塊（左上） -->
-        <section class="simply_query">
-            <h3>簡易查詢</h3>
-            <form action="aaa.ruby" method="get">
-                <input type="text" placeholder="請輸入關鍵字" name="keywords">
-                <input type="submit" value="Search">
-                <input type="submit" value="查詢字詞擴展">
-                <br>
-                <!-- 關鍵字類型 複選（方框） -->
-                <input type="checkbox" name="keywords_type" value="1" id="keywords_type1"><label for="keywords_type1">論文名稱</label>
-                <input type="checkbox" name="keywords_type" value="2" id="keywords_type2"><label for="keywords_type2">研究生</label>
-                <input type="checkbox" name="keywords_type" value="3" id="keywords_type3"><label for="keywords_type3">指導教授</label>
-                <input type="checkbox" name="keywords_type" value="4" id="keywords_type4"><label for="keywords_type4">口試委員</label>
-                <input type="checkbox" name="keywords_type" value="5" id="keywords_type5"><label for="keywords_type5">關鍵詞</label>
-                <input type="checkbox" name="keywords_type" value="6" id="keywords_type6"><label for="keywords_type6">摘要</label>
-                <input type="checkbox" name="keywords_type" value="7" id="keywords_type7"><label for="keywords_type7">參考文獻</label>
-                    <!-- 全選方法：https://injerry.pixnet.net/blog/post/6477885 -->
-                <br>
-                <!-- 查詢模式 單選（圓框） -->
-                <label>查詢模式：</label>
-                    <input type="radio" name="search_mode" value="1" id="search_mode1"><label for="search_mode1">精準</label>
-                    <input type="radio" name="search_mode" value="2" id="search_mode2"><label for="search_mode2">模糊</label>
-                    <input type="radio" name="search_mode" value="3" id="search_mode3"><label for="search_mode3">同音</label>
-                    <input type="radio" name="search_mode" value="4" id="search_mode4"><label for="search_mode4">同義詞</label>
-                    <input type="radio" name="search_mode" value="5" id="search_mode5"><label for="search_mode5">漢語拼音</label>
-                    <input type="radio" name="search_mode" value="6" id="search_mode6"><label for="search_mode6">通用拼音</label>
-                <br>
-                <!-- 輔助檢索 複選（方框） -->
-                <label>輔助檢索：</label>
-                    <input type="checkbox" name="assisted_search" value="1" id="assisted_search1"><label for="assisted_search1">簡體轉換繁體</label>
-                    <input type="checkbox" name="assisted_search" value="2" id="assisted_search2"><label for="assisted_search2">拉丁語</label>
-                <br>
-                <!-- 論文種類 下拉式選單 -->
-                <label for="type_of_paper">論文種類：</label>
-                <select name="type_of_paper" id="type_of_paper">
-                    <option value="1" selected>全部</option>
-                    <option value="2">學術論文</option>
-                    <option value="3">代替論文：技術報告（應用科技類）</option>
-                    <option value="4">代替論文：作品連同書面報告（藝術類）</option>
-                    <option value="5">代替論文：成就證明連同書面報告（體育運動類）</option>
-                    <option value="6">代替論文：專業實務報告（專業實務類）</option>
-                </select>
-                <br>
-                <!-- 全文類型 多選（方框） -->
-                <label>全文類型：</label>
-                <input type="checkbox" name="full_text" value="1" id="full_text1"><label for="full_text1">電子全文</label>
-                <input type="checkbox" name="full_text" value="2" id="full_text2"><label for="full_text2">電子全文</label>
-                <input type="checkbox" name="full_text" value="3" id="full_text3"><label for="full_text3">電子全文</label>
-            </form> 
-            <hr> <!-- 水平線 -->
-            <!-- 熱門檢索詞 -->
-            <p>熱門檢索詞： 過去</p>
+<body>
+    <header>
+        <a href="https://ndltd.ncl.edu.tw/cgi-bin/gs32/gsweb.cgi/ccd=j_epfj/webmge?mode=basic"><img src="https://fakeimg.pl/250x60/f0f0f0,0/fff,255/?retina=1&text=臺灣博碩士論文知識加值系統&font=noto" alt="臺灣博碩士知識論文加值系統"></a>
+        <div>
             <ul>
-                <li><a href="#">1天</a><span>|</span></li>
-                <li><a href="#">7天</a><span>|</span></li>
-                <li><a href="#">14天</a><span>|</span></li>
-                <li><a href="#">30天</a><span>|</span></li>
-                <li><a href="#">180天</a><span>|</span></li>
-                <li><a href="#">1年</a><span>|</span></li>
-                <li><a href="#">歷年</a></li>
+                <li><a href="#">網站導覽</a><span class="straight">|</span></li>
+                <li><a href="#">首頁</a><span class="straight">|</span></li>
+                <li><a href="#">關於本站</a><span class="straight">|</span></li>
+                <li><a href="#">聯絡我們</a><span class="straight">|</span></li>
+                <li><a href="https://www.ncl.edu.tw/">國圖首頁</a><span class="straight">|</span></li>
+                <li><a href="#">常見問題</a><span class="straight">|</span></li>
+                <li><a href="#">操作說明</a></li>
             </ul>
-        </section>
-
-        <!-- 最新消息區塊（左下） -->
-        <section class="lastest_news">
-            <h3>最新消息</h3>
+        </div>        
+        <div>
             <ul>
-                <li>2019/08/05&nbsp;&nbsp;&nbsp;<a href="#" class="color_black">小小授權書，裡頭學問大</a></li>
-                <li>2023/03/31&nbsp;&nbsp;&nbsp;<a href="#" class="color_black">電子學位論文引用APA格式：建議使用「臺灣博碩士論文知識加值系統」論文handle網址</a></li>
-                <li>2024/05/01&nbsp;&nbsp;&nbsp;<a href="#">銘謝 林子喬先生授權國立壹灣大學碩士論文：戰國秦漢理想官制中的數字概念</a></li>
-                <li>2024/04/10&nbsp;&nbsp;&nbsp;<a href="#">銘謝 范思美小姐授權國立政治大學博士論文：不安全依附對員工建言行為之影響：不同家長式領導風格之調節效果</a></li>
-                <li>2024/04/05&nbsp;&nbsp;&nbsp;<a href="#">銘謝 徐偉鑫先生授權國立政治大學碩士論文：高維度測量誤差變數與錯誤分類處理的因果推論</a></li>
-                <li>2024/04/05&nbsp;&nbsp;&nbsp;<a href="#">銘謝 許玉欣小姐授權國立政治大學碩士論文：傳說、利用與保育：近代臺灣海洋史中的鯨豚</a></li>
-                <li>2024/03/27&nbsp;&nbsp;&nbsp;<a href="#">銘謝 方鋕丞先生授權國立東華大學碩士論文：壹灣慈悲關懷友善社區之本土化的系譜考究與詮釋</a></li>
-                <li>2024/03/15&nbsp;&nbsp;&nbsp;<a href="#">銘謝 翁羽亮先生授權國立政治大學碩士論文：可解釋AI之類型對資訊透明度及使用者信任之影響：以假評論偵測為例</a></li>
-                <li>2024/03/14&nbsp;&nbsp;&nbsp;<a href="#">銘謝 黃柳蕙小姐授權國立臺灣師範大學碩士論文：威爾第歌劇之「梭利塔模式」研究：以《弄臣》、《遊唱詩人》與《茶花女》為例</a></li>
-                <li>2024/03/13&nbsp;&nbsp;&nbsp;<a href="#">銘謝 林奇瑩小姐授權國立臺灣大學碩士論文：試探儒家家庭觀在壹灣挺/反同婚運動中的角色</a></li>
+                <li><a href="#">English</a><span class="straight">|</span></li>
+                <li><a href="https://www.facebook.com/ndltdTW">FB 專頁</a><span class="straight">|</span></li>
+                <li><a href="#">Mobile</a></li>
             </ul>
-            <a href="#">更多</a>
-        </section>
-    </body>
-    
-    <aside>
-        <!-- 熱門排行榜區塊（右上） -->
-        <section class="hot_rank">
-            <h3>臺灣博碩士論文熱門排行榜</h3>
-            <div>
-                <ul>
-                    <li><a href="#">全文授權數</a><span>/</span></li>
-                    <li><a href="#">全文授權率</a></li>
-                </ul>
-            </div>
-            <div>
-                <ul>
-                    <li><a href="#">112</a><span>|</span></li>
-                    <li><a href="#">111</a><span>|</span></li>
-                    <li><a href="#">110</a><span>|</span></li>
-                    <li><a href="#">109</a><span>|</span></li>
-                    <li><a href="#">108</a><span>|</span></li>
-                    <li><a href="#">107</a><span>|</span></li>
-                    <li><a href="#">歷年</a></li>
-                </ul>
-                <span>學年度</span>
-            </div>
-            <table border="0">
-                <thead> <!-- 第一列 表頭(語意化標籤) --> 
-                    <tr> <!-- 表頭也是一種table row -->
-                        <th>名次</th> <!-- 第一列 表頭 的第一格資料 -->
-                        <th>學校名稱</th>
-                        <th>已授權全文</th>
-                        <th>書目</th>
-                    </tr>
-                </thead>
-                <tbody> <!-- 表格內容區塊 -->
-                    <tr> <!-- 第二列 -->
-                        <td class="rank">1</td> <!-- 第二列 的第二格資料 -->
-                        <td>國立成功大學</td>
-                        <td><a href="#">569</a></td>
-                        <td><a href="#">582</a></td>
-                    </tr>
-                    <tr> <!-- 第三列 -->
-                        <td class="rank">2</td> <!-- 第三列 的第二格資料 -->
-                        <td>國立臺灣師範大學</td>
-                        <td><a href="#">502</a></td>
-                        <td><a href="#">541</a></td>
-                    </tr>
-                    <tr> <!-- 第四列 -->
-                        <td class="rank">3</td> <!-- 第四列 的第二格資料 -->
-                        <td>國立政治大學</td>
-                        <td><a href="#">498</a></td>
-                        <td><a href="#">603</a></td>
-                    </tr>
-                    <tr> <!-- 第五列 -->
-                        <td class="rank">4</td> <!-- 第五列 的第二格資料 -->
-                        <td>國立中山大學</td>
-                        <td><a href="#">473</a></td>
-                        <td><a href="#">515</a></td>
-                    </tr>
-                    <tr> <!-- 第六列 -->
-                        <td class="rank">5</td> <!-- 第六列 的第二格資料 -->
-                        <td>國立臺北科技大學</td>
-                        <td><a href="#">323</a></td>
-                        <td><a href="#">331</a></td>
-                    </tr>
-                </tbody>
-            </table>
-            <a href="#">更多全文授權數</a>
-        </section>
-        <!-- 廣告區塊（右下） -->
-        <section class="ad">
-            <img src="https://fakeimg.pl/450x60/f0f0f0/000/?retina=1&text=強力徵求學位論文授權&font=noto">
-            <img src="https://fakeimg.pl/450x60/f0f0f0/000/?retina=1&text=學位授與法&font=noto">
-            <img src="https://fakeimg.pl/450x60/005AB5/fff/?retina=1&text=NDLTD Facebook粉絲團 讚&font=noto">
-            <img src="https://fakeimg.pl/450x60/f0f0f0/000/?retina=1&text=SRDA學術調查研究資料庫&font=noto">
-            <img src="https://fakeimg.pl/450x60/FFE153/005AB5/?retina=1&text=ETD 2018 Taiwan 電子學位論文國際研討會&font=noto">
-            <img src="https://fakeimg.pl/450x60/f0f0f0/005AB5/?retina=1&text=校際傑出學術論文授權暨發表會&font=noto">
-        </section>
-        <!-- 假圖產生器 <img src="https://fakeimg.pl/200x100（圖片尺寸）/ff0000（底色）/000（字體顏色）/?retina=1&text=こんにちは（圖上的字）&font=noto（中文、韓文、日文）">-->
-    </aside>
-</section>
+        </div>
+        <div class="clearfix"></div>
+        <nav>
+            <ul>
+                <li><a href="#">論文查詢</a></li>
+                <li><a href="#">排行榜</a></li>
+                <li><a href="#">影音圖像</a></li>
+                <li><a href="#">主題館</a></li>
+                <li><a href="#">我的研究室</a></li>
+                <li><a href="#">NDLTD查詢</a></li>
+            </ul>
+        </nav>
+    </header>
 
+    <section class="content">
+        <section class="main_content">
+            <!-- 簡易查詢區塊（左上） -->
+            <section class="simply_query">
+                <h3>&nbsp;&nbsp;<span class="straight">|</span>&nbsp;簡易查詢</h3>
+                <form action="aaa.ruby" method="get">
+                    <input type="text" placeholder="請輸入關鍵字" name="keywords" class="keywords">
+                    <input type="submit" value="Search" id="buttom1">
+                    <input type="submit" value="查詢字詞擴展" id="buttom2">
+                    <br>
+                    <!-- 關鍵字類型 複選（方框） -->
+                    <input type="checkbox" name="keywords_type" value="1" id="keywords_type1"><label for="keywords_type1">論文名稱</label>
+                    <input type="checkbox" name="keywords_type" value="2" id="keywords_type2"><label for="keywords_type2">研究生</label>
+                    <input type="checkbox" name="keywords_type" value="3" id="keywords_type3"><label for="keywords_type3">指導教授</label>
+                    <input type="checkbox" name="keywords_type" value="4" id="keywords_type4"><label for="keywords_type4">口試委員</label>
+                    <input type="checkbox" name="keywords_type" value="5" id="keywords_type5"><label for="keywords_type5">關鍵詞</label>
+                    <input type="checkbox" name="keywords_type" value="6" id="keywords_type6"><label for="keywords_type6">摘要</label>
+                    <input type="checkbox" name="keywords_type" value="7" id="keywords_type7"><label for="keywords_type7">參考文獻</label>
+                        <!-- 全選方法：https://injerry.pixnet.net/blog/post/6477885 -->
+                    <br>
+                    <!-- 查詢模式 單選（圓框） -->
+                    <label>查詢模式：</label>
+                        <input type="radio" name="search_mode" value="1" id="search_mode1"><label for="search_mode1">精準</label>
+                        <input type="radio" name="search_mode" value="2" id="search_mode2"><label for="search_mode2">模糊</label>
+                        <input type="radio" name="search_mode" value="3" id="search_mode3"><label for="search_mode3">同音</label>
+                        <input type="radio" name="search_mode" value="4" id="search_mode4"><label for="search_mode4">同義詞</label>
+                        <input type="radio" name="search_mode" value="5" id="search_mode5"><label for="search_mode5">漢語拼音</label>
+                        <input type="radio" name="search_mode" value="6" id="search_mode6"><label for="search_mode6">通用拼音</label>
+                    <br>
+                    <!-- 輔助檢索 複選（方框） -->
+                    <label>輔助檢索：</label>
+                        <input type="checkbox" name="assisted_search" value="1" id="assisted_search1"><label for="assisted_search1">簡體轉換繁體</label>
+                        <input type="checkbox" name="assisted_search" value="2" id="assisted_search2"><label for="assisted_search2">拉丁語</label>
+                    <br>
+                    <!-- 論文種類 下拉式選單 -->
+                    <label for="type_of_paper">論文種類：</label>
+                    <select name="type_of_paper" id="type_of_paper">
+                        <option value="1" selected>全部</option>
+                        <option value="2">學術論文</option>
+                        <option value="3">代替論文：技術報告（應用科技類）</option>
+                        <option value="4">代替論文：作品連同書面報告（藝術類）</option>
+                        <option value="5">代替論文：成就證明連同書面報告（體育運動類）</option>
+                        <option value="6">代替論文：專業實務報告（專業實務類）</option>
+                    </select>
+                    <br>
+                    <!-- 全文類型 多選（方框） -->
+                    <label>全文類型：</label>
+                    <input type="checkbox" name="full_text" value="1" id="full_text1"><label for="full_text1">電子全文</label>
+                    <input type="checkbox" name="full_text" value="2" id="full_text2"><label for="full_text2">電子全文</label>
+                    <input type="checkbox" name="full_text" value="3" id="full_text3"><label for="full_text3">電子全文</label>
+                </form> 
+                <hr> <!-- 水平線 -->
+                <!-- 熱門檢索詞 -->
+                <span>熱門檢索詞： 過去</span>
+                    <a href="#">1天</a><span>|</span>
+                    <a href="#">7天</a><span>|</span>
+                    <a href="#">14天</a><span>|</span>
+                    <a href="#">30天</a><span>|</span>
+                    <a href="#">180天</a><span>|</span>
+                    <a href="#">1年</a><span>|</span>
+                    <a href="#">歷年</a></li>
+            </section>
 
+            <!-- 最新消息區塊（左下） -->
+            <section class="lastest_news">
+                <h3>&nbsp;&nbsp;<span class="straight">|</span>&nbsp;最新消息</h3>
+                <ul>
+                    <li>2019/08/05&nbsp;&nbsp;&nbsp;<a href="#" class="color_black">小小授權書，裡頭學問大</a></li>
+                    <li>2023/03/31&nbsp;&nbsp;&nbsp;<a href="#" class="color_black">電子學位論文引用APA格式：建議使用「臺灣博碩士論文知識加值系統」論文handle網址</a></li>
+                    <li>2024/05/01&nbsp;&nbsp;&nbsp;<a href="#">銘謝 林子喬先生授權國立壹灣大學碩士論文：戰國秦漢理想官制中的數字概念</a></li>
+                    <li>2024/04/10&nbsp;&nbsp;&nbsp;<a href="#">銘謝 范思美小姐授權國立政治大學博士論文：不安全依附對員工建言行為之影響：不同家長式領導風格之調節效果</a></li>
+                    <li>2024/04/05&nbsp;&nbsp;&nbsp;<a href="#">銘謝 徐偉鑫先生授權國立政治大學碩士論文：高維度測量誤差變數與錯誤分類處理的因果推論</a></li>
+                    <li>2024/04/05&nbsp;&nbsp;&nbsp;<a href="#">銘謝 許玉欣小姐授權國立政治大學碩士論文：傳說、利用與保育：近代臺灣海洋史中的鯨豚</a></li>
+                    <li>2024/03/27&nbsp;&nbsp;&nbsp;<a href="#">銘謝 方鋕丞先生授權國立東華大學碩士論文：壹灣慈悲關懷友善社區之本土化的系譜考究與詮釋</a></li>
+                    <li>2024/03/15&nbsp;&nbsp;&nbsp;<a href="#">銘謝 翁羽亮先生授權國立政治大學碩士論文：可解釋AI之類型對資訊透明度及使用者信任之影響：以假評論偵測為例</a></li>
+                    <li>2024/03/14&nbsp;&nbsp;&nbsp;<a href="#">銘謝 黃柳蕙小姐授權國立臺灣師範大學碩士論文：威爾第歌劇之「梭利塔模式」研究：以《弄臣》、《遊唱詩人》與《茶花女》為例</a></li>
+                    <li>2024/03/13&nbsp;&nbsp;&nbsp;<a href="#">銘謝 林奇瑩小姐授權國立臺灣大學碩士論文：試探儒家家庭觀在壹灣挺/反同婚運動中的角色</a></li>
+                </ul>
+                <a href="#" class="more">更多</a>
+            </section>
+        </section>
+        
+
+        <aside>
+            <!-- 熱門排行榜區塊（右上） -->
+            <section class="hot_rank">
+                <h3>&nbsp;&nbsp;<span class="straight">|</span>&nbsp;臺灣博碩士論文熱門排行榜</h3>
+                <span class="align">
+                    <span>
+                        <a href="#">全文授權數</a><span>/</span>
+                        <a href="#">全文授權率</a>
+                    </span>
+                    <span>
+                        <a href="#">112</a><span>|</span>
+                        <a href="#">111</a><span>|</span>
+                        <a href="#">110</a><span>|</span>
+                        <a href="#">109</a><span>|</span>
+                        <a href="#">108</a><span>|</span> 
+                        <a href="#">107</a><span>|</span>
+                        <a href="#">歷年</a>
+                        <span>學年度</span>
+                    </span> 
+                </span>
+                <table border="0">
+                    <thead> <!-- 第一列 表頭(語意化標籤) --> 
+                        <tr> <!-- 表頭也是一種table row -->
+                            <th>名次</th> <!-- 第一列 表頭 的第一格資料 -->
+                            <th>學校名稱</th>
+                            <th>已授權全文</th>
+                            <th>書目</th>
+                        </tr>
+                    </thead>
+                    <tbody> <!-- 表格內容區塊 -->
+                        <tr> <!-- 第二列 -->
+                            <td class="rank">1</td> <!-- 第二列 的第二格資料 -->
+                            <td>國立成功大學</td>
+                            <td><a href="#">569</a></td>
+                            <td><a href="#">582</a></td>
+                        </tr>
+                        <tr> <!-- 第三列 -->
+                            <td class="rank">2</td> <!-- 第三列 的第二格資料 -->
+                            <td>國立臺灣師範大學</td>
+                            <td><a href="#">502</a></td>
+                            <td><a href="#">541</a></td>
+                        </tr>
+                        <tr> <!-- 第四列 -->
+                            <td class="rank">3</td> <!-- 第四列 的第二格資料 -->
+                            <td>國立政治大學</td>
+                            <td><a href="#">498</a></td>
+                            <td><a href="#">603</a></td>
+                        </tr>
+                        <tr> <!-- 第五列 -->
+                            <td class="rank">4</td> <!-- 第五列 的第二格資料 -->
+                            <td>國立中山大學</td>
+                            <td><a href="#">473</a></td>
+                            <td><a href="#">515</a></td>
+                        </tr>
+                        <tr> <!-- 第六列 -->
+                            <td class="rank">5</td> <!-- 第六列 的第二格資料 -->
+                            <td>國立臺北科技大學</td>
+                            <td><a href="#">323</a></td>
+                            <td><a href="#">331</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <a href="#" class="more">更多全文授權數</a>
+            </section>
+            <!-- 廣告區塊（右下） -->
+            <section class="ad">
+                <div>
+                    <a href="https://cloud.ncl.edu.tw/get_thesis_authorize.php"><img src="https://fakeimg.pl/450x60/fff/000/?retina=1&text=強力徵求學位論文授權&font=noto" alt="強力徵求學位論文授權"></a>
+                    <a href="https://law.moj.gov.tw/LawClass/LawAll.aspx?PCode=H0030010"><img src="https://fakeimg.pl/450x60/fff/000/?retina=1&text=學位授與法&font=noto" alt="學位授與法"></a>
+                    <a href="https://www.facebook.com/ndltdTW"><img src="https://fakeimg.pl/450x60/005AB5/fff/?retina=1&text=NDLTD Facebook粉絲團 讚&font=noto" alt="NDLTD Facebook粉絲團 讚"></a>
+                    <a href="https://srda.sinica.edu.tw/index.php"><img src="https://fakeimg.pl/450x60/fff/000/?retina=1&text=SRDA學術調查研究資料庫&font=noto" alt="SRDA學術調查研究資料庫"></a>
+                    <a href="#"> <img src="https://fakeimg.pl/450x60/FFE153/005AB5/?retina=1&text=ETD 2018 Taiwan 電子學位論文國際研討會&font=noto" alt="ETD 2018 Taiwan 電子學位論文國際研討會"></a>
+                    <a href="#"><img src="https://fakeimg.pl/450x60/fff/005AB5/?retina=1&text=校際傑出學術論文授權暨發表會&font=noto" alt="校際傑出學術論文授權暨發表會"></a>
+                </div>
+            </section>
+            <!-- 假圖產生器 <img src="https://fakeimg.pl/200x100（圖片尺寸）/ff0000,0（底色,不透明度（0為透明 255為完全不透明））/000,255（字體顏色,不透明度）/?retina=1&text=こんにちは（圖上的字）&font=noto（中文、韓文、日文）">-->
+        </aside>
+        
+        <div class="clearfix"></div>
+    </section>
+
+    <!-- 頁尾 -->
+    <hr>
+    <footer>
+        <p>本系統(Web7)共收集：論文已授權全文：<span>723331</span> 筆、書目與摘要：<span>1412402 </span>筆
+            <br>
+            目前上線人數：<span>7213</span> ／ 訪客人次（自99年6月）：<span>634077181</span> ／ 檢索次數（自99年6月）：<span>5646308961</span> ／ 指導單位： <span>教育部</span>
+            <br>
+            國家圖書館著作權聲明 Copyright © 2010 All rights reserved.
+            <br>
+            本館地址：100201 臺北市中山南路20號 總機：(02)23619132
+            <br>
+            本網站最佳瀏覽解析度為 1600 x 900
+        </p>
+    </footer>
+</body>
 </html>

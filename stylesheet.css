@@ -1,0 +1,265 @@
+.clearfix {
+    clear: both;
+}
+
+html {
+    background-color: #F1F1F1;
+    color: #686868;
+}
+
+
+/* 頁首 */
+
+header img {
+    /* width: 40%; */
+    float: left;
+}
+
+header {
+    background-image: linear-gradient(to bottom, #f7b632, #F1F1F1); /* 由上至下的漸層 */
+}
+
+header div ul {
+    /* background-color: #625ea9af;
+    width: 50%;
+    float: right; */
+    list-style: none;
+    text-align: right; /* 寫在li或a沒效果 */
+}
+
+header div li {
+    display: inline-block;
+}
+
+header div li a {
+    color: #000;
+    text-decoration: none;
+    font-size: 0.9em;
+}
+
+header div ul li .straight {
+    color: #D94600;
+}
+
+
+/* 頁首>導覽列 */
+
+nav {
+    background-color: #6B8D18;
+    /* height: 40px; */
+}
+
+nav ul {
+    list-style: none;
+    text-align: right;
+    /* display: inline-flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end; */
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 40px;
+ 
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 6px;
+}
+
+
+/* 內容區塊 左右兩欄分配 */
+
+/* .content {
+    display: flex;
+    justify-content: space-between;
+} */
+
+.content .main_content {
+    width: 55%;
+    float: left;
+    margin-right: 2%;
+    margin-left: 2%;
+}
+
+.content aside {
+    width: 39%;
+    float: left;
+    margin-right: 2%;
+}
+
+
+/* 內容區塊>簡易查詢 */
+
+.content .simply_query {
+    background-color: #fff;
+    padding-bottom: 30px;
+}
+
+.content h3 .straight {
+    color: #64772B;
+    font-weight: 900;
+}
+
+.content h3 {
+    background-color: #BCC925;
+    color: #2A7580;
+    line-height: 40px;
+}
+
+.content .simply_query .keywords{
+    width: 50%;
+    border-color: rgb(118,118,118,0.3);
+    /* border-radius: 3%; */
+}
+
+.content .simply_query #buttom1 {
+    border:0;
+    background-color: #0A4A92;
+    color: #fff;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.content .simply_query #buttom2 {
+    border:0;
+    background-color: #0A4A92;
+    color: #fff;
+}
+
+.content .simply_query .keywords:focus {
+    outline-color: #000;
+}/* 點擊輸入框 外框變黑色 */
+
+.content .simply_query {
+    line-height: 25px;
+}
+
+.content .simply_query select {
+    background-color: #e8e8e8;
+}
+
+.content .simply_query select:focus {
+    outline-color: #000;
+}/* 點擊選擇框 外框變黑色 */
+
+.content .simply_query hr {
+    color: #CCCCCC;
+}
+
+.content .simply_query a {
+    color: #519EAE;
+    text-decoration: none;
+}
+
+
+/* 內容區塊>最新消息 */
+
+.content .lastest_news {
+    background-color: #fff;
+}
+
+.content .lastest_news ul li {
+    list-style-type: circle;
+}
+
+.content .lastest_news ul li a {
+    text-decoration: none;
+    color: #2A7580;
+    line-height: 28px;
+}
+
+.content .lastest_news ul li .color_black {
+    color: #000;
+    font-weight: 900;
+}
+
+.content .lastest_news .more {
+    display: flex;
+    justify-content: flex-end;
+    color: #2A7580;
+    text-decoration: none;
+}
+
+/* 內容區塊>熱門排行榜 */
+
+.content .hot_rank {
+    background-color: #fff;
+    margin-bottom: 25px;
+}
+
+/* .content .hot_rank div ul {
+    list-style: none;
+}
+
+.content .hot_rank div ul li {
+    display: inline-block;
+} */
+
+.content .hot_rank .align {
+    /* background-color: #0A4A92; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.content .hot_rank a {
+    color: #2A7580;
+    text-decoration: none;
+}
+
+.content .hot_rank table {
+    width: 97%;
+    margin: auto;
+}
+
+.content .hot_rank thead {
+    background-color: #F0EBE0;
+}
+
+.content .hot_rank tbody .rank {
+    text-align: center;
+}
+
+.content .hot_rank tbody td a {
+    display: flex;
+    justify-content: center;
+}
+
+.content .hot_rank .more {
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* 內容區塊>廣告 */
+
+.content .ad div {
+    text-align:center;
+}
+
+/* .content .ad img {
+    display: block;
+    width: 60%;
+    margin: auto;
+} */
+
+.content .ad img {
+    width:70%;
+    margin-top:5px;
+}
+
+
+/* 頁尾 */
+
+footer p {
+    line-height: 25px;
+}
+
+footer p span {
+    color: #488AC6;
+}
+
+
