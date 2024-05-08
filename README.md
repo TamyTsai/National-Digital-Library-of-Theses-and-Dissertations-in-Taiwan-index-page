@@ -1,6 +1,6 @@
 ## 簡介
 - 本專案以HTML及CSS刻出模仿臺灣博碩士論文知識加值系統首頁之網頁，為一頁式靜態網頁
-- 其中應用FlexBox技術排版
+- 其中應用Flexbox技術排版
 
 ## 畫面
 ### 原始臺灣博碩士論文知識加值系統首頁畫面
@@ -27,4 +27,4 @@ cd National-Digital-Library-of-Theses-and-Dissertations-in-Taiwan-index-page
 ## 專案技術
 - HTML
 - CSS
-  - FlexBox
+  - Flexbox
