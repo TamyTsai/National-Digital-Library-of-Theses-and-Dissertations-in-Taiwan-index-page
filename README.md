@@ -23,7 +23,7 @@ cd National-Digital-Library-of-Theses-and-Dissertations-in-Taiwan-index-page
 
 ## 檔案說明
 - index.html - 頁面之HTML
-- stylesheet - 頁面之CSS
+- stylesheet.css - 頁面之樣式
 
 ## 專案技術
 - HTML
