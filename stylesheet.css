@@ -134,6 +134,7 @@ nav ul li a {
 .content .simply_query .keywords:focus {
     outline-color: #000;
 }/* 點擊輸入框 外框變黑色 */
+/* 偽類能夠在特定動作時改變 DOM 的 CSS 樣式 */
 
 .content .simply_query {
     line-height: 25px;
